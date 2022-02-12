@@ -1,0 +1,74 @@
+// BREAK POINTS   
+$breakpoints: (
+    "xxl": 1400px,
+    "xl": 1200px,
+    "lg": 992px,
+    "tablet": 768px,
+    "mobileL": 425px,
+    "mobileM": 375px,
+    "mobileS": 320px,
+);
+
+// EXTRA EXTRA LARGE
+@mixin xxl {
+    @media (max-width: map-get($breakpoints, "xxl")) {
+        @content;
+    }
+}
+
+// EXTRA LARGE DEVICES
+@mixin xl {
+    @media (max-width: map-get($breakpoints, "xl")) {
+        @content;
+    }
+}
+
+// LARGE DEVICES
+@mixin lg {
+    @media (max-width: map-get($breakpoints, "lg")) {
+        @content;
+    }
+}
+
+// TABLET
+@mixin tablet {
+    @media (max-width: map-get($breakpoints, "tablet")) {
+        @content;
+    }
+}
+
+// MOBILE L
+
+@mixin mobileL {
+    @media (max-width: map-get($breakpoints, "mobileL")) {
+        @content;
+    }
+}
+
+// MOBILE M
+
+@mixin mobileM {
+    @media (max-width: map-get($breakpoints, "mobileM")) {
+        @content;
+    }
+}
+// MOBILE S
+
+@mixin mobileS {
+    @media (max-width: map-get($breakpoints, "mobileS")) {
+        @content;
+    }
+}
+
+// ANY OTHER BREAK POINT MAX
+@mixin breakpoints($bp: 0) {
+    @media (max-width: $bp) {
+        @content;
+    }
+}
+// ANY OTHER BREAK POINT MIN
+@mixin breakpointsMin($bp: 0) {
+    @media (min-width: $bp) {
+        @content;
+    }
+}

@@ -1,0 +1,86 @@
+.o-app{
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 100px 120px;
+    width: 100%;
+    overflow: hidden;
+    @include lg{
+        flex-direction: column;
+    }
+    @include tablet{
+        padding: 60px 30px;
+    }
+
+    .o-app-text{
+        position: relative;
+        width: 50%;
+        z-index: 2;
+        @include lg{
+            width: 100%;
+            margin-bottom: 60px;
+        }
+        h4{
+            font-size: $h4Size;
+            font-family: $nunito;
+            font-weight: 800;
+            font-style: normal;
+            line-height: 25px;
+            color: $green;
+            margin-bottom: 16px;
+        }
+        h1{
+            font-size: $h1Size;
+            font-family: $nunito;
+            font-weight: 900;
+            font-style: normal;
+            line-height: 70px;
+            color: $purpleDark;
+            margin-bottom: 42px;
+        }
+        p{
+            font-size: $pSize;
+            font-family: $nunito;
+            font-weight: 600;
+            font-style: normal;
+            line-height: 25px;
+            color: $purpleDark;
+            width: 80%;
+            @include breakpoints(600px){
+                width: 100%;
+            }
+        }
+    }
+
+    .o-app-img{
+        position: relative;
+        width: 50%;
+        z-index: 2;
+        @include lg{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .hex-orange{
+        position: absolute;
+        top: 6%;
+        left: 45%;
+        @include breakpoints(600px){
+            left: 10%;
+        }
+    }
+    .hex-green{
+        position: absolute;
+        bottom: 16%;
+        right: 2%;
+        @include tablet{
+            display: none;
+        }
+    }
+}
