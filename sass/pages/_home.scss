@@ -19,6 +19,9 @@
         width: 22px;
         border-radius: 50%;
         background-color: $green;
+        @include lg{
+            display: none;
+        }
     }
     .circle-2 {
         position: absolute;
@@ -28,6 +31,9 @@
         width: 40px;
         border-radius: 50%;
         background-color: $orange;
+        @include lg{
+            display: none;
+        }
     }
     .circle-3 {
         position: absolute;
@@ -37,6 +43,9 @@
         width: 20px;
         border-radius: 50%;
         background-color: $green;
+        @include lg{
+            display: none;
+        }
     }
     .circle-4{
         position: absolute;
@@ -46,6 +55,9 @@
         width: 20px;
         border-radius: 50%;
         background-color: $purpleDark;
+        @include lg{
+            display: none;
+        }
     }
     .circle-5 {
         position: absolute;
@@ -55,6 +67,9 @@
         width: 22px;
         border-radius: 50%;
         background-color: $yellow;
+        @include lg{
+            display: none;
+        }
     }
 }
 
@@ -78,14 +93,16 @@
     position: relative;
     left: 122px;
     @include xl {
-        left: 30px;
+        width: 70%;
+        left: 15px;
     }
-    @include lg {
-        margin: 0 auto;
-        left: 0px;
+    @include lg{
+        left: 122px;
     }
-    @include breakpoints(560px) {
-        padding: 10px;
+    @include tablet {
+        margin-right: 20px;
+        width: 100%;
+        left: 15px;
     }
     h1{
         font-size: $h1Size;
@@ -95,6 +112,14 @@
         line-height: 70px;
         color: $purpleDark;
         margin-bottom: 27px;
+        @include lg{
+            font-size: 44px;
+            line-height: 40px;
+        }
+        @include tablet {
+            font-size: 34px;
+            margin-top: 30px;
+        }
     }
     p{
         font-size: $pSize;
@@ -104,27 +129,47 @@
         line-height: 25px;
         color: $purpleDark;
         margin-bottom: 43px;
+        @include lg{
+            font-size: 16px;
+            line-height: 20px;
+            width: 100%;
+            margin-bottom: 23px;
+        }
+        @include tablet {
+            font-size: 14px;
+            width: 90%;
+        }
+        br{
+            @include lg{
+                display: none;
+            }
+        }
     }
 
     .app-store{
         display: flex;
-        justify-content: space-between;
-        @include tablet {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        img{
+        justify-content: flex-start;
+        align-items: center;
+        a{
             margin-right: 30px;
-            transition: transform .3s;
-            &:hover{
-                transform: scale(1.2); 
-            }
-            @include lg {
+            @include lg{
                 margin-right: 10px;
             }
+            @include tablet{
+                margin-bottom: 40px;
+            }
+        }
+        img{
+            transition: 0.2s;
             @include tablet {
-                margin-bottom: 30px;
+                width: 70%;
+            }
+            @include breakpoints(566px) {
+                width: 90%;
+
+            }
+            &:hover{
+                opacity: 0.7;
             }
         }
     }

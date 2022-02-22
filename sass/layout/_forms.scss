@@ -1,0 +1,184 @@
+.kontakt{
+    position: relative;
+    background-color: $white;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+
+    .forms{
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 34%;
+        @include tablet {
+            width: 96%;
+        }
+    }
+    .input-group{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .input-group input {
+        height: 60px;
+        width: 100%;
+        padding: 20px;
+        font-size: $pSize;
+        font-family: $nunito;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 25px;
+        color: $purpleDark;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background-color: rgba($color: $purple, $alpha: 0.1);
+    }
+
+    .input-group textarea {
+        height: 240px;
+        width: 100%;
+        padding: 20px;
+        font-size: $pSize;
+        font-family: $nunito;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 25px;
+        color: $purpleDark;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background-color: rgba($color: $purple, $alpha: 0.1);
+    }
+
+    h4{
+        font-size: $h4Size;
+        font-family: $nunito;
+        font-weight: 800;
+        font-style: normal;
+        line-height: 25px;
+        color: $purple;
+        margin-top: 80px;
+        margin-bottom: 3px;
+        position: relative;
+        z-index: 2;
+        margin-top: 80px;
+    }
+    h2{
+        font-size: $h2Size;
+        font-family: $nunito;
+        font-weight: 900;
+        font-style: normal;
+        line-height: 70px;
+        color: $purpleDark;
+        margin-bottom: 61px;
+        position: relative;
+        z-index: 2;
+        @include tablet{
+            font-size: 32px;
+            text-align: center;
+            line-height: 50px;
+        }
+    }
+
+    .circle-1{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: $purple;
+        top: 12%;
+        left: 10%;
+        @include lg{
+            display: none;
+        }
+    }
+    .circle-2{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: $orange;
+        top: 50%;
+        right: 12%;
+        @include lg{
+            display: none;
+        }
+    }
+    .circle-3{
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: $yellow;
+        top: 56%;
+        left: 15%;
+        @include lg{
+            display: none;
+        }
+    }
+    .circle-4{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: $green;
+        top: 70%;
+        left: 30%;
+        @include lg{
+            display: none;
+        }
+    }
+    .circle-5{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: $green;
+        bottom: 14%;
+        right: 20%;
+        @include lg{
+            display: none;
+        }
+    }
+
+    .hexagon-green{
+        position: absolute;
+        left: -130px;
+        bottom: -160px;
+        @include mobileL {
+            bottom: -230px;
+        }
+    }
+    .hexagon-yellow{
+        position: absolute;
+        top: 20px;
+        right: -150px;
+        @include lg{
+            display: none;
+        }
+    }
+    form{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .error{
+        font-size: $navSize;
+        font-family: $nunito;
+        font-weight: normal;
+        font-style: normal;
+        color: red;
+        height: 30px;
+    }
+}

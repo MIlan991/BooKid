@@ -15,11 +15,11 @@
 <body>
     <!-- HEAD PAGE -->
     <div id="pocetna" class="head-page">
-        <div class="circle-1"></div>
-        <div class="circle-2"></div>
-        <div class="circle-3"></div>
-        <div class="circle-4"></div>
-        <div class="circle-5"></div>
+        <div class="circle-1" data-aos="zoom-in" data-aos-delay="100"></div>
+        <div class="circle-2" data-aos="zoom-in" data-aos-delay="200"></div>
+        <div class="circle-3" data-aos="zoom-in" data-aos-delay="300"></div>
+        <div class="circle-4" data-aos="zoom-in" data-aos-delay="400"></div>
+        <div class="circle-5" data-aos="zoom-in" data-aos-delay="500" data-aos-offset="0"></div>
 
         <header>
             <div class="logo" data-aos="fade-down">
@@ -37,24 +37,60 @@
         
                 <nav class="nav-social" data-aos="fade-down">
                     <ul>
-                        <li class="item"><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-logo.png" alt="Facebook page"></a></li>
-                        <li class="item"><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-logo.png" alt="Instagram page"></a></li>
-                        <li class="item"><a href="https://www.youtube.com/" target="_blank"><img src="images/youtube-logo.png" alt="Youtube channel"></a></li>
-                        <li class="item"><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-logo.png" alt="Linkedin page"></a></li>
+                        <li class="item">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <svg width="11" height="21" viewBox="0 0 11 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.58164 20.2798V11.0304H9.57013L10.0178 7.42608H6.58164V5.11977C6.58164 4.07529 6.86072 3.36287 8.30264 3.36287H10.1399V0.144899C9.82595 0.0965994 8.73289 0 7.4654 0C4.81414 0 3.00011 1.67841 3.00011 4.76356V7.42004H0V11.0244H3.00011V20.2738H6.58164V20.2798Z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Frame" clip-path="url(#clip0_5_370)">
+                                    <path id="Vector" d="M10.1399 1.82353C12.8476 1.82353 13.1653 1.83043 14.2359 1.88569C15.2237 1.93404 15.7625 2.09291 16.1216 2.23797C16.5982 2.42446 16.9298 2.63859 17.289 2.99777C17.6412 3.35004 17.8623 3.6885 18.0488 4.1651C18.1869 4.52428 18.3527 5.05614 18.401 6.0508C18.4494 7.12143 18.4632 7.43916 18.4632 10.1468C18.4632 12.8545 18.4494 13.1722 18.401 14.2429C18.3527 15.2306 18.1938 15.7694 18.0488 16.1285C17.8623 16.6052 17.6482 16.9367 17.289 17.2959C16.9367 17.6482 16.5982 17.8692 16.1216 18.0557C15.7625 18.1938 15.2306 18.3596 14.2359 18.408C13.1653 18.4563 12.8476 18.4701 10.1399 18.4701C7.43226 18.4701 7.11452 18.4632 6.04389 18.408C5.05614 18.3596 4.51737 18.2007 4.1582 18.0557C3.68159 17.8692 3.35004 17.6551 2.99086 17.2959C2.63859 16.9436 2.41756 16.6052 2.23106 16.1285C2.09291 15.7694 1.92714 15.2375 1.87879 14.2429C1.83043 13.1722 1.81662 12.8545 1.81662 10.1468C1.81662 7.43916 1.82353 7.12143 1.87879 6.0508C1.92714 5.06305 2.086 4.52428 2.23106 4.1651C2.41756 3.6885 2.63168 3.35695 2.99086 2.99777C3.34313 2.6455 3.68159 2.42446 4.1582 2.23797C4.51737 2.09982 5.04924 1.93404 6.04389 1.88569C7.10761 1.83734 7.43226 1.82353 10.1399 1.82353ZM10.1399 0C7.3839 0 7.03854 0.0138146 5.961 0.0621657C4.87655 0.110517 4.14438 0.283199 3.49509 0.531862C2.82509 0.79434 2.26559 1.1397 1.6992 1.6992C1.1328 2.26559 0.787432 2.82509 0.531862 3.49509C0.283199 4.13747 0.110517 4.87655 0.0621657 5.95409C0.0138146 7.03854 0 7.3839 0 10.1399C0 12.8959 0.0138146 13.2413 0.0621657 14.3188C0.110517 15.3964 0.283199 16.1355 0.531862 16.7778C0.787432 17.4478 1.1397 18.0073 1.6992 18.5737C2.26559 19.1401 2.82509 19.4855 3.49509 19.7411C4.13747 19.9897 4.87655 20.1624 5.95409 20.2108C7.03854 20.2591 7.3839 20.2729 10.133 20.2729C12.889 20.2729 13.2344 20.2591 14.3119 20.2108C15.3895 20.1624 16.1285 19.9897 16.7709 19.7411C17.4409 19.4786 18.0004 19.1332 18.5668 18.5737C19.1332 18.0073 19.4786 17.4478 19.7342 16.7778C19.9828 16.1355 20.1555 15.3964 20.2039 14.3188C20.2522 13.2344 20.266 12.889 20.266 10.1399C20.266 7.3839 20.2522 7.03854 20.2039 5.961C20.1555 4.88346 19.9828 4.14438 19.7342 3.502C19.4717 2.83199 19.1263 2.2725 18.5668 1.7061C18.0004 1.1397 17.4409 0.79434 16.7709 0.538769C16.1285 0.290107 15.3895 0.117424 14.3119 0.069073C13.2413 0.0138146 12.8959 0 10.1399 0Z"/>
+                                    <path id="Vector_2" d="M10.14 4.93182C7.26655 4.93182 4.93188 7.25958 4.93188 10.1399C4.93188 13.0134 7.25965 15.348 10.14 15.348C13.0134 15.348 15.3481 13.0203 15.3481 10.1399C15.3481 7.26649 13.0134 4.93182 10.14 4.93182ZM10.14 13.5176C8.27502 13.5176 6.76232 12.0049 6.76232 10.1399C6.76232 8.27496 8.27502 6.76226 10.14 6.76226C12.005 6.76226 13.5177 8.27496 13.5177 10.1399C13.5177 12.0049 12.005 13.5176 10.14 13.5176Z"/>
+                                    <path id="Vector_3" d="M16.7708 4.72459C16.7708 5.3946 16.2252 5.94028 15.5552 5.94028C14.8852 5.94028 14.3395 5.3946 14.3395 4.72459C14.3395 4.05459 14.8852 3.50891 15.5552 3.50891C16.2252 3.50891 16.7708 4.05459 16.7708 4.72459Z"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_5_370">
+                                    <rect width="20.2798" height="20.2798" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27.8862 2.79406C27.5601 1.72552 26.5938 0.883019 25.3667 0.600472C23.1436 0.0764771 14.2395 0.0764771 14.2395 0.0764771C14.2395 0.0764771 5.33537 0.0764771 3.1123 0.595335C1.88516 0.883019 0.924797 1.72038 0.592819 2.79406C0 4.73079 0 8.76863 0 8.76863C0 8.76863 0 12.8116 0.592819 14.7483C0.918869 15.8169 1.88516 16.6594 3.1123 16.9419C5.33537 17.4608 14.2395 17.4608 14.2395 17.4608C14.2395 17.4608 23.1436 17.4608 25.3667 16.9419C26.5938 16.6542 27.5542 15.8169 27.8862 14.7483C28.479 12.8116 28.479 8.76863 28.479 8.76863C28.479 8.76863 28.479 4.73079 27.8862 2.79406ZM11.3288 12.4417V5.10067L18.7746 8.76863L11.3288 12.4417Z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.81639 20.2798V6.59683H0.26879V20.281H4.81639V20.2798ZM2.54316 4.72909C4.12833 4.72909 5.11619 3.6769 5.11619 2.36397C5.08633 1.02232 4.12833 0 2.57303 0C1.01658 0 0 1.02232 0 2.36397C0 3.6769 0.986711 4.72909 2.5133 4.72909H2.54316Z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33319 20.2799H11.8808V12.6377C11.8808 12.2288 11.9107 11.8199 12.0313 11.5281C12.3598 10.7102 13.1087 9.86481 14.3642 9.86481C16.0103 9.86481 16.6685 11.1203 16.6685 12.9593V20.2799H21.2161V12.4333C21.2161 8.23025 18.9727 6.27405 15.9804 6.27405C13.5268 6.27405 12.4494 7.64557 11.8509 8.57944H11.8808V6.59683H7.33319C7.39292 7.8799 7.33319 20.2799 7.33319 20.2799Z"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
-            
-            <div id="tgl-btn" class="burger" data-aos="fade-down">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+                
+            <div id="tgl-btn"  class="burgers" data-aos="fade-down">
+                <label class="burger burger3" for="burger3">
+                  <input class="hidden" id="burger3" type="checkbox" onclick="openCloseNav()"/><span></span>
+                </label>
+              </div>
             
         </header>
     
         <div class="head-container">
     
-            <div class="head-container-text" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+            <div class="head-container-text" data-aos="fade-up" data-aos-duration="1000">
                 <h1 class="head-text">Najbolje priče <br>za vaše mališane</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem Ipsum has been the <br>industry's standard dummy text ever since the 1500s,<br> when an unknown printer took a galley.</p>
     
@@ -65,7 +101,7 @@
                 </div>
             </div>
     
-            <div class="head-container-img"  data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+            <div class="head-container-img" data-aos="fade-up" data-aos-duration="1000">
                 <img class="phone-img" src="images/phone-img.png" />
                 <img class="hex-green" src="images/circle-green.png" />
                 <img class="hex-yellow" src="images/hexagon-yellow.png" />
@@ -82,17 +118,19 @@
     <div id="o-app" class="o-app">
         
         <div class="o-app-text" data-aos="fade-up" data-aos-duration="1000">
-            <h4>O aplikaciji</h4>
-            <h1>O aplikaciji</h1>
+            <h4>O Aplikaciji</h4>
+            <h1>O Aplikaciji</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
         </div>
 
-        <div class="o-app-img" data-aos="fade-up" data-aos-duration="1000">
-            <img src="images/family-photo.png" alt="Family photo">
+        <div class="o-app-img" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="90">
+            <figure id="container">
+                <img src="images/family-photo.png" alt="Family photo">
+            </figure>
+            <img class="hex-orange" src="images/hexagon-orange.png" alt="">
+            <img class="hex-green" src="images/hexagon-green.png" alt="">
         </div>
 
-        <img class="hex-orange" src="images/hexagon-orange.png" alt="">
-        <img class="hex-green" src="images/hexagon-green.png" alt="">
     </div>
 
     <!-- TOP PRICE -->
@@ -107,32 +145,32 @@
 
         <div class="top-price-grid">
 
-            <div class="story-cover" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+            <div class="story-cover" data-aos="zoom-out-up" data-aos-delay="100" data-aos-duration="1000">
                 <img src="images/prica-cover.png" alt="Story cover">
                 <p id="first-p">Category name</p>
                 <h3>Story name Story name Story name</h3>
             </div>
-            <div class="story-cover" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+            <div class="story-cover" data-aos="zoom-out-up" data-aos-delay="200" data-aos-duration="1000">
                 <img src="images/prica-cover.png" alt="Story cover">
                 <p>Category name</p>
                 <h3>Story name Story name Story name</h3>
             </div>
-            <div class="story-cover" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+            <div class="story-cover" data-aos="zoom-out-up" data-aos-delay="300" data-aos-duration="1000">
                 <img src="images/prica-cover.png" alt="Story cover">
                 <p>Category name</p>
                 <h3>Story name Story name Story name</h3>
             </div>
-            <div class="story-cover" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+            <div class="story-cover" data-aos="zoom-out-up" data-aos-delay="400" data-aos-duration="1000">
                 <img src="images/prica-cover.png" alt="Story cover">
                 <p>Category name</p>
                 <h3>Story name Story name Story name</h3>
             </div>
-            <div class="story-cover" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+            <div class="story-cover" data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="1000">
                 <img src="images/prica-cover.png" alt="Story cover">
                 <p>Category name</p>
                 <h3>Story name Story name Story name</h3>
             </div>
-            <div class="story-cover" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+            <div class="story-cover" data-aos="zoom-out-up" data-aos-delay="600" data-aos-duration="1000">
                 <img src="images/prica-cover.png" alt="Story cover">
                 <p>Category name</p>
                 <h3>Story name Story name Story name</h3>
@@ -142,38 +180,44 @@
 
     </div>
 
-    <!-- KONTAKT -->
+    <!-- FORMS -->
 
     <div class="kontakt">
-        <h4 id="kontakt">Kontakt</h4>
-        <h2>Tu smo za vas</h2>
+        <h4 id="kontakt" data-aos="fade-up" data-aos-duration="600">Kontakt</h4>
+        <h2 data-aos="fade-up" data-aos-duration="1000">Tu smo za vas</h2>
 
-        <div class="forms">
+        <form method="post" action="form.php" name="registration_form" id="registration_form">
+            <div class="forms" data-aos="fade-up" data-aos-duration="600">
+    
+                <div class="input-group">
+                    <input type="text" id="name" name="name" aria-describedby="name-format" placeholder="Ime">
+                    <span class="error"><p id="name_error"></p></span>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder="E-mail">
+                    <span class="error"><p id="email_error"></p></span>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="telephone" name="telephone" placeholder="Naslov">
+                    <span class="error"><p id="telephone_error"></p></span>
+                </div>
+    
+                <div class="input-group">
+                    <textarea id="comment" name="comment" placeholder="Poruka"></textarea>
+                    <span class="error"><p id="comment_error"></p></span>
+                </div>
+    
+                <br>
+                <button id="button" name="button" class="form-btn register_button" type="submit" value="submit">POŠALJI</button>
+                <span class="error"><p id="button_error"></p></span>
+            </div></form>
+            
 
-            <div class="input-group" data-aos="zoom-in">
-                <input type="text" placeholder="Ime" required>
-            </div>
-            <div class="input-group" data-aos="zoom-in">
-                <input type="email" placeholder="E-mail" required>
-            </div>
-            <div class="input-group" data-aos="zoom-in">
-                <input type="text" placeholder="Naslov" required>
-            </div>
-
-            <div class="input-group" data-aos="zoom-in">
-                <textarea rows="" cols="" name="comment" form="usrform" placeholder="Poruka"></textarea>
-            </div>
-
-            <br>
-            <input class="form-btn" type="submit" value="POŠALJI">
-
-        </div>
-
-        <div class="circle-1"></div>
-        <div class="circle-2"></div>
-        <div class="circle-3"></div>
-        <div class="circle-4"></div>
-        <div class="circle-5"></div>
+        <div class="circle-1" data-aos="zoom-in" data-aos-delay="400"></div>
+        <div class="circle-2" data-aos="zoom-in" data-aos-delay="200"></div>
+        <div class="circle-3" data-aos="zoom-in" data-aos-delay="300"></div>
+        <div class="circle-4" data-aos="zoom-in" data-aos-delay="100"></div>
+        <div class="circle-5" data-aos="zoom-in" data-aos-delay="500" data-aos-offset="0"></div>
         <img class="hexagon-green" src="images/hexagon-green.png" alt="">
         <img class="hexagon-yellow" src="images/hexagon-yellow.png" alt="">
     </div>
@@ -194,10 +238,44 @@
         <div class="social-footer" data-aos="fade-up">
             <nav>
                 <ul>
-                    <li><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-logo-footer.png" alt=""></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-logo-footer.png" alt=""></a></li>
-                    <li><a href="https://www.youtube.com/" target="_blank"><img src="images/youtube-logo-footer.png" alt=""></a></li>
-                    <li><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-logo-footer.png" alt=""></a></li>
+                    <li class="item">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <svg width="11" height="21" viewBox="0 0 11 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.58164 20.2798V11.0304H9.57013L10.0178 7.42608H6.58164V5.11977C6.58164 4.07529 6.86072 3.36287 8.30264 3.36287H10.1399V0.144899C9.82595 0.0965994 8.73289 0 7.4654 0C4.81414 0 3.00011 1.67841 3.00011 4.76356V7.42004H0V11.0244H3.00011V20.2738H6.58164V20.2798Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_7_756)">
+                                <path d="M10.1399 1.82353C12.8476 1.82353 13.1653 1.83043 14.2359 1.88569C15.2237 1.93404 15.7625 2.09291 16.1216 2.23797C16.5982 2.42446 16.9298 2.63859 17.289 2.99777C17.6412 3.35004 17.8623 3.6885 18.0488 4.1651C18.1869 4.52428 18.3527 5.05614 18.401 6.0508C18.4494 7.12143 18.4632 7.43916 18.4632 10.1468C18.4632 12.8545 18.4494 13.1722 18.401 14.2429C18.3527 15.2306 18.1938 15.7694 18.0488 16.1285C17.8623 16.6052 17.6482 16.9367 17.289 17.2959C16.9367 17.6482 16.5982 17.8692 16.1216 18.0557C15.7625 18.1938 15.2306 18.3596 14.2359 18.408C13.1653 18.4563 12.8476 18.4701 10.1399 18.4701C7.43226 18.4701 7.11452 18.4632 6.04389 18.408C5.05614 18.3596 4.51737 18.2007 4.1582 18.0557C3.68159 17.8692 3.35004 17.6551 2.99086 17.2959C2.63859 16.9436 2.41756 16.6052 2.23106 16.1285C2.09291 15.7694 1.92714 15.2375 1.87879 14.2429C1.83043 13.1722 1.81662 12.8545 1.81662 10.1468C1.81662 7.43916 1.82353 7.12143 1.87879 6.0508C1.92714 5.06305 2.086 4.52428 2.23106 4.1651C2.41756 3.6885 2.63168 3.35695 2.99086 2.99777C3.34313 2.6455 3.68159 2.42446 4.1582 2.23797C4.51737 2.09982 5.04924 1.93404 6.04389 1.88569C7.10761 1.83734 7.43226 1.82353 10.1399 1.82353ZM10.1399 0C7.3839 0 7.03854 0.0138146 5.961 0.0621657C4.87655 0.110517 4.14438 0.283199 3.49509 0.531862C2.82509 0.79434 2.26559 1.1397 1.6992 1.6992C1.1328 2.26559 0.787432 2.82509 0.531862 3.49509C0.283199 4.13747 0.110517 4.87655 0.0621657 5.95409C0.0138146 7.03854 0 7.3839 0 10.1399C0 12.8959 0.0138146 13.2413 0.0621657 14.3188C0.110517 15.3964 0.283199 16.1355 0.531862 16.7778C0.787432 17.4478 1.1397 18.0073 1.6992 18.5737C2.26559 19.1401 2.82509 19.4855 3.49509 19.7411C4.13747 19.9897 4.87655 20.1624 5.95409 20.2108C7.03854 20.2591 7.3839 20.2729 10.133 20.2729C12.889 20.2729 13.2344 20.2591 14.3119 20.2108C15.3895 20.1624 16.1285 19.9897 16.7709 19.7411C17.4409 19.4786 18.0004 19.1332 18.5668 18.5737C19.1332 18.0073 19.4786 17.4478 19.7342 16.7778C19.9828 16.1355 20.1555 15.3964 20.2039 14.3188C20.2522 13.2344 20.266 12.889 20.266 10.1399C20.266 7.3839 20.2522 7.03854 20.2039 5.961C20.1555 4.88346 19.9828 4.14438 19.7342 3.502C19.4717 2.83199 19.1263 2.2725 18.5668 1.7061C18.0004 1.1397 17.4409 0.79434 16.7709 0.538769C16.1285 0.290107 15.3895 0.117424 14.3119 0.069073C13.2413 0.0138146 12.8959 0 10.1399 0Z"/>
+                                <path d="M10.14 4.93188C7.26655 4.93188 4.93188 7.25965 4.93188 10.14C4.93188 13.0134 7.25965 15.3481 10.14 15.3481C13.0134 15.3481 15.3481 13.0203 15.3481 10.14C15.3481 7.26655 13.0134 4.93188 10.14 4.93188ZM10.14 13.5177C8.27502 13.5177 6.76232 12.005 6.76232 10.14C6.76232 8.27502 8.27502 6.76232 10.14 6.76232C12.005 6.76232 13.5177 8.27502 13.5177 10.14C13.5177 12.005 12.005 13.5177 10.14 13.5177Z"/>
+                                <path d="M16.7708 4.72447C16.7708 5.39448 16.2252 5.94016 15.5552 5.94016C14.8852 5.94016 14.3395 5.39448 14.3395 4.72447C14.3395 4.05447 14.8852 3.50879 15.5552 3.50879C16.2252 3.50879 16.7708 4.05447 16.7708 4.72447Z"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_7_756">
+                                <rect width="20.2798" height="20.2798" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27.8862 3.12648C27.5601 1.89716 26.5938 0.927896 25.3667 0.602837C23.1436 0 14.2395 0 14.2395 0C14.2395 0 5.33537 0 3.1123 0.596927C1.88516 0.927896 0.924797 1.89125 0.592819 3.12648C0 5.35461 0 10 0 10C0 10 0 14.6513 0.592819 16.8794C0.918869 18.1087 1.88516 19.078 3.1123 19.4031C5.33537 20 14.2395 20 14.2395 20C14.2395 20 23.1436 20 25.3667 19.4031C26.5938 19.0721 27.5542 18.1087 27.8862 16.8794C28.479 14.6513 28.479 10 28.479 10C28.479 10 28.479 5.35461 27.8862 3.12648ZM11.3288 14.2258V5.78014L18.7746 10L11.3288 14.2258Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.81639 20.2798V6.59683H0.26879V20.281H4.81639V20.2798ZM2.54316 4.72909C4.12833 4.72909 5.11619 3.6769 5.11619 2.36397C5.08633 1.02232 4.12833 0 2.57303 0C1.01658 0 0 1.02232 0 2.36397C0 3.6769 0.986711 4.72909 2.5133 4.72909H2.54316Z"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33321 20.28H11.8808V12.6378C11.8808 12.2289 11.9107 11.82 12.0313 11.5282C12.3598 10.7104 13.1087 9.86493 14.3642 9.86493C16.0103 9.86493 16.6685 11.1204 16.6685 12.9595V20.28H21.2161V12.4334C21.2161 8.23037 18.9727 6.27417 15.9804 6.27417C13.5269 6.27417 12.4494 7.64569 11.8509 8.57957H11.8808V6.59695H7.33321C7.39294 7.88002 7.33321 20.28 7.33321 20.28Z"/>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -226,12 +304,7 @@
     </footer>
 
     <!-- RESPONSIVE NAVBAR -->
-    <div class="toggleNav">
-        <div class="logo-toggle" data-aos="fade-down">
-            <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
-            <i id="close-tgl" class="fa fa-close"></i>
-        </div>
-
+    <div class="toggleNav" id="myNav">
         <div class="navigation">
             <div class="nav-toggle">
                 <ul>
@@ -244,10 +317,46 @@
     
             <div class="social-toggle">
                 <ul>
-                    <li class="item"><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-logo.png" alt="Facebook page"></a></li>
-                    <li class="item"><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-logo.png" alt="Instagram page"></a></li>
-                    <li class="item"><a href="https://www.youtube.com/" target="_blank"><img src="images/youtube-logo.png" alt="Youtube channel"></a></li>
-                    <li class="item"><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-logo.png" alt="Linkedin page"></a></li>
+                    <li class="item">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <svg width="11" height="21" viewBox="0 0 11 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.58164 20.2798V11.0304H9.57013L10.0178 7.42608H6.58164V5.11977C6.58164 4.07529 6.86072 3.36287 8.30264 3.36287H10.1399V0.144899C9.82595 0.0965994 8.73289 0 7.4654 0C4.81414 0 3.00011 1.67841 3.00011 4.76356V7.42004H0V11.0244H3.00011V20.2738H6.58164V20.2798Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Frame" clip-path="url(#clip0_5_370)">
+                                <path id="Vector" d="M10.1399 1.82353C12.8476 1.82353 13.1653 1.83043 14.2359 1.88569C15.2237 1.93404 15.7625 2.09291 16.1216 2.23797C16.5982 2.42446 16.9298 2.63859 17.289 2.99777C17.6412 3.35004 17.8623 3.6885 18.0488 4.1651C18.1869 4.52428 18.3527 5.05614 18.401 6.0508C18.4494 7.12143 18.4632 7.43916 18.4632 10.1468C18.4632 12.8545 18.4494 13.1722 18.401 14.2429C18.3527 15.2306 18.1938 15.7694 18.0488 16.1285C17.8623 16.6052 17.6482 16.9367 17.289 17.2959C16.9367 17.6482 16.5982 17.8692 16.1216 18.0557C15.7625 18.1938 15.2306 18.3596 14.2359 18.408C13.1653 18.4563 12.8476 18.4701 10.1399 18.4701C7.43226 18.4701 7.11452 18.4632 6.04389 18.408C5.05614 18.3596 4.51737 18.2007 4.1582 18.0557C3.68159 17.8692 3.35004 17.6551 2.99086 17.2959C2.63859 16.9436 2.41756 16.6052 2.23106 16.1285C2.09291 15.7694 1.92714 15.2375 1.87879 14.2429C1.83043 13.1722 1.81662 12.8545 1.81662 10.1468C1.81662 7.43916 1.82353 7.12143 1.87879 6.0508C1.92714 5.06305 2.086 4.52428 2.23106 4.1651C2.41756 3.6885 2.63168 3.35695 2.99086 2.99777C3.34313 2.6455 3.68159 2.42446 4.1582 2.23797C4.51737 2.09982 5.04924 1.93404 6.04389 1.88569C7.10761 1.83734 7.43226 1.82353 10.1399 1.82353ZM10.1399 0C7.3839 0 7.03854 0.0138146 5.961 0.0621657C4.87655 0.110517 4.14438 0.283199 3.49509 0.531862C2.82509 0.79434 2.26559 1.1397 1.6992 1.6992C1.1328 2.26559 0.787432 2.82509 0.531862 3.49509C0.283199 4.13747 0.110517 4.87655 0.0621657 5.95409C0.0138146 7.03854 0 7.3839 0 10.1399C0 12.8959 0.0138146 13.2413 0.0621657 14.3188C0.110517 15.3964 0.283199 16.1355 0.531862 16.7778C0.787432 17.4478 1.1397 18.0073 1.6992 18.5737C2.26559 19.1401 2.82509 19.4855 3.49509 19.7411C4.13747 19.9897 4.87655 20.1624 5.95409 20.2108C7.03854 20.2591 7.3839 20.2729 10.133 20.2729C12.889 20.2729 13.2344 20.2591 14.3119 20.2108C15.3895 20.1624 16.1285 19.9897 16.7709 19.7411C17.4409 19.4786 18.0004 19.1332 18.5668 18.5737C19.1332 18.0073 19.4786 17.4478 19.7342 16.7778C19.9828 16.1355 20.1555 15.3964 20.2039 14.3188C20.2522 13.2344 20.266 12.889 20.266 10.1399C20.266 7.3839 20.2522 7.03854 20.2039 5.961C20.1555 4.88346 19.9828 4.14438 19.7342 3.502C19.4717 2.83199 19.1263 2.2725 18.5668 1.7061C18.0004 1.1397 17.4409 0.79434 16.7709 0.538769C16.1285 0.290107 15.3895 0.117424 14.3119 0.069073C13.2413 0.0138146 12.8959 0 10.1399 0Z"/>
+                                <path id="Vector_2" d="M10.14 4.93182C7.26655 4.93182 4.93188 7.25958 4.93188 10.1399C4.93188 13.0134 7.25965 15.348 10.14 15.348C13.0134 15.348 15.3481 13.0203 15.3481 10.1399C15.3481 7.26649 13.0134 4.93182 10.14 4.93182ZM10.14 13.5176C8.27502 13.5176 6.76232 12.0049 6.76232 10.1399C6.76232 8.27496 8.27502 6.76226 10.14 6.76226C12.005 6.76226 13.5177 8.27496 13.5177 10.1399C13.5177 12.0049 12.005 13.5176 10.14 13.5176Z"/>
+                                <path id="Vector_3" d="M16.7708 4.72459C16.7708 5.3946 16.2252 5.94028 15.5552 5.94028C14.8852 5.94028 14.3395 5.3946 14.3395 4.72459C14.3395 4.05459 14.8852 3.50891 15.5552 3.50891C16.2252 3.50891 16.7708 4.05459 16.7708 4.72459Z"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_5_370">
+                                <rect width="20.2798" height="20.2798" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27.8862 2.79406C27.5601 1.72552 26.5938 0.883019 25.3667 0.600472C23.1436 0.0764771 14.2395 0.0764771 14.2395 0.0764771C14.2395 0.0764771 5.33537 0.0764771 3.1123 0.595335C1.88516 0.883019 0.924797 1.72038 0.592819 2.79406C0 4.73079 0 8.76863 0 8.76863C0 8.76863 0 12.8116 0.592819 14.7483C0.918869 15.8169 1.88516 16.6594 3.1123 16.9419C5.33537 17.4608 14.2395 17.4608 14.2395 17.4608C14.2395 17.4608 23.1436 17.4608 25.3667 16.9419C26.5938 16.6542 27.5542 15.8169 27.8862 14.7483C28.479 12.8116 28.479 8.76863 28.479 8.76863C28.479 8.76863 28.479 4.73079 27.8862 2.79406ZM11.3288 12.4417V5.10067L18.7746 8.76863L11.3288 12.4417Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.81639 20.2798V6.59683H0.26879V20.281H4.81639V20.2798ZM2.54316 4.72909C4.12833 4.72909 5.11619 3.6769 5.11619 2.36397C5.08633 1.02232 4.12833 0 2.57303 0C1.01658 0 0 1.02232 0 2.36397C0 3.6769 0.986711 4.72909 2.5133 4.72909H2.54316Z"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33319 20.2799H11.8808V12.6377C11.8808 12.2288 11.9107 11.8199 12.0313 11.5281C12.3598 10.7102 13.1087 9.86481 14.3642 9.86481C16.0103 9.86481 16.6685 11.1203 16.6685 12.9593V20.2799H21.2161V12.4333C21.2161 8.23025 18.9727 6.27405 15.9804 6.27405C13.5268 6.27405 12.4494 7.64557 11.8509 8.57944H11.8808V6.59683H7.33319C7.39292 7.8799 7.33319 20.2799 7.33319 20.2799Z"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
