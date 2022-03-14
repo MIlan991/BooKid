@@ -1,9 +1,10 @@
 .top-price{
     background-color: rgba($color: $green, $alpha: 0.2);
     padding: 75px 120px 100px 120px;
+    overflow: hidden;
 
-    @include tablet {
-        padding: 30px;
+    @include xl {
+        padding: 10px;
     }
     @include mobileS {
         padding: 10px;
@@ -38,12 +39,13 @@
         gap: 81px;
         margin: 0 auto;
         @include xl{
-            gap: 40px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 140px;
         }
         @include lg{
-            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
         }
-        @include breakpoints(600px){
+        @include breakpoints(565px){
             grid-template-columns: repeat(1, 1fr);
         }
     }
@@ -53,11 +55,8 @@
         border-radius: 20px;
         cursor: pointer;
         border: 2px solid rgba($color: $green, $alpha: 0.2);
-        &:hover{
-             border: 2px solid $purpleDark;
-             box-shadow: 5px 5px 28px $purple;
-        }
         img{
+            position: relative;
             width: 100%;
         }
         p{
@@ -81,5 +80,12 @@
             color: $purpleDark;
             padding: 0 30px 30px 30px;
         }
+    }
+    .story-cover .story-img{
+        transition:all .5s cubic-bezier(.2,-.01,.25,.9)
+    }
+    .story-cover:hover .story-img{
+        transform:translateY(-10px);
+        transition: .6s;
     }
 }

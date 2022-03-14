@@ -9,9 +9,7 @@
     overflow: hidden;
     @include lg{
         flex-direction: column;
-    }
-    @include tablet{
-        padding: 60px 30px;
+        padding: 50px 15px;
     }
 
     .o-app-text{
@@ -30,6 +28,9 @@
             line-height: 25px;
             color: $green;
             margin-bottom: 16px;
+            @include lg{
+                margin-bottom: 0;
+            }
         }
         h1{
             font-size: $h1Size;
@@ -39,6 +40,10 @@
             line-height: 70px;
             color: $purpleDark;
             margin-bottom: 42px;
+            @include lg{
+                font-size: 48px;
+                line-height: 50px;
+            }
         }
         p{
             font-size: $pSize;
@@ -48,8 +53,11 @@
             line-height: 25px;
             color: $purpleDark;
             width: 80%;
-            @include breakpoints(600px){
+            @include lg{
                 width: 100%;
+                font-size: 16px;
+                line-height: 1.4;
+                font-weight: 100;
             }
         }
     }
@@ -57,30 +65,54 @@
     .o-app-img{
         position: relative;
         width: 50%;
+        text-align: center;
         z-index: 2;
         @include lg{
             width: 100%;
+            text-align: center;
         }
-        img{
+        #container {
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 20px;
+          }
+          
+          #container img {
             width: 100%;
             max-width: 100%;
-        }
+            display: block;
+            transition: all .8s;
+          }
+          
+          #container:hover img {
+            transform: scale(1.08);
+          }
+          .hex-orange{
+              position: absolute;
+              top: -9%;
+              left: -10%;
+              z-index: -1;
+              @include lg{
+                  left: 20px;
+              }
+              @include breakpoints(566px){
+                  left: -40px;
+              }
+          }
+          .hex-green{
+              position: absolute;
+              bottom: 10%;
+              right: -14%;
+              z-index: -1;
+              @include lg{
+                  right: 0%;
+                  left: 60%;
+              }
+              @include breakpoints(566px) {
+                  display: none;
+              }
+          }
+
     }
 
-    .hex-orange{
-        position: absolute;
-        top: 6%;
-        left: 45%;
-        @include breakpoints(600px){
-            left: 10%;
-        }
-    }
-    .hex-green{
-        position: absolute;
-        bottom: 16%;
-        right: 2%;
-        @include tablet{
-            display: none;
-        }
-    }
 }

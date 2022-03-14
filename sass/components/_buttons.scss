@@ -10,12 +10,82 @@
     font-family: $nunito;
     font-weight: 800;
     line-height: 25px;
-    margin-bottom: 80px;
+    margin-bottom: 8px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease-in;
     &:hover{
         background-color: $orange;
-        color: $purple;
-        transform: scale(1.06);
     }
 }
+
+//TOGGLEE BUTTON
+.burgers{
+    display: none;
+    @include lg{
+        display: block;
+    }
+}
+.hidden {
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  
+  .burger {
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    border-radius: 3px;
+    background-color: none;
+    margin: 0.5rem;
+    margin-top: -14px;
+  }
+  .burger span {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    position: absolute;
+    margin: 0.0625rem auto 0.525rem -0.75rem;
+    text-indent: -999em;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+  }
+  .burger span, .burger span:before, .burger span:after {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 12px;
+    background-color: $purpleDark;
+    transition: 0.3s;
+    opacity: 1;
+  }
+  .burger span:before, .burger span:after {
+    position: absolute;
+    content: "";
+  }
+  .burger span:before {
+    top: -14px;
+  }
+  .burger span:after {
+    top: 14px;
+  }
+  
+  
+  .burger3 input:checked + span:before, .burger3 input:checked + span:after {
+    top: 0px;
+    margin-top: -0.5875rem;
+  }
+  .burger3 input:checked + span {
+    transform: rotate(-360deg);
+    background-color: transparent;
+  }
+  .burger3 input:checked + span:before {
+    transform: translateY(0.525rem) rotate(-45deg);
+  }
+  .burger3 input:checked + span:after {
+    transform: translateY(0.525rem) rotate(45deg);
+  }
