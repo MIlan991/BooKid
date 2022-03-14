@@ -58,11 +58,6 @@
         img{
             position: relative;
             width: 100%;
-            transition: 0.4s;
-            &:hover{
-                margin-top: -10px;
-                margin-bottom: 10px;
-            }
         }
         p{
             font-size: $navSize;
@@ -85,5 +80,12 @@
             color: $purpleDark;
             padding: 0 30px 30px 30px;
         }
+    }
+    .story-cover .story-img{
+        transition:all .5s cubic-bezier(.2,-.01,.25,.9)
+    }
+    .story-cover:hover .story-img{
+        transform:translateY(-10px);
+        transition: .6s;
     }
 }
